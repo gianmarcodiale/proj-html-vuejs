@@ -1,6 +1,15 @@
-@import '~/node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "~/node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 body {
-    font-family: 'Roboto', Arial, Helvetica, Verdana, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, Verdana, sans-serif;
+}
+
+@mixin button {
+  background: transparent;
+  background-color: $btnsColor;
+  border: none;
+  color: $mainWhiteColor;
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
 }
