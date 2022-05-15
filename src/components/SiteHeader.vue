@@ -47,10 +47,7 @@
 export default {
   name: "SiteHeader",
   props: {
-      navMenu: Object,
-  },
-  data() {
-    return {};
+      navMenu: Array,
   },
 };
 </script>

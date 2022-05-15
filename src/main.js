@@ -4,11 +4,22 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faChevronDown,
   faCartShopping,
-  faMagnifyingGlass
+  faMagnifyingGlass,
+  faRuler,
+  faLifeRing,
+  faBook,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faChevronDown, faCartShopping, faCircleUser, faMagnifyingGlass);
+library.add(
+  faChevronDown,
+  faCartShopping,
+  faCircleUser,
+  faMagnifyingGlass,
+  faRuler,
+  faLifeRing,
+  faBook
+);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
