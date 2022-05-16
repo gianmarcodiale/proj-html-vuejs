@@ -100,6 +100,7 @@ export default {
       border-radius: 1.25rem;
       z-index: 1;
       box-shadow: 0px -2px 25px -6px grey;
+      max-width: 720px;
     }
 
     img.yt-logo {
@@ -107,6 +108,7 @@ export default {
       top: 50%;
       right: 50%;
       transform: translate(50%, -50%);
+      max-width: 95px;
     }
   }
 
@@ -114,9 +116,9 @@ export default {
     position: relative;
 
     img {
-      width: 370px;
+      max-width: 370px;
       position: absolute;
-      left: 5%;
+      left: 12%;
     }
   }
 
@@ -125,7 +127,8 @@ export default {
 
     img {
       position: absolute;
-      bottom: -35%;
+      bottom: -44%;
+      right: 36%;
     }
   }
 }

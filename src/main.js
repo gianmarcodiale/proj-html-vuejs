@@ -8,6 +8,7 @@ import {
   faRuler,
   faLifeRing,
   faBook,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -18,7 +19,8 @@ library.add(
   faMagnifyingGlass,
   faRuler,
   faLifeRing,
-  faBook
+  faBook,
+  faCheck
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
