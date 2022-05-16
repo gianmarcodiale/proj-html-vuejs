@@ -35,27 +35,37 @@
           </div>
         </div>
       </div>
+      <div class="courses-btn text-center">
+        <button>
+          View all courses <font-awesome-icon icon="fa-solid fa-arrow-right" />
+        </button>
+      </div>
     </section>
+    <PartnersSection />
   </main>
 </template>
 
 <script>
 import CourseInfoSection from "@/components/CourseInfoSection.vue";
 import ServicesSection from "@/components/ServicesSection.vue";
+import PartnersSection from "@/components/PartnersSection.vue";
 
 export default {
   name: "SiteMain",
   components: {
     CourseInfoSection,
     ServicesSection,
+    PartnersSection,
   },
   props: {
-      coursesList: Array,
-  }
+    coursesList: Array,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/style.scss";
+// courses section
 #courses_section {
   padding-top: 5rem;
   background-color: $blogSect_footerColor;
@@ -114,6 +124,10 @@ export default {
           font-size: 20px;
           font-weight: 600;
           cursor: pointer;
+
+          &:hover {
+            color: $highlightedTextColor;
+          }
         }
 
         .lessons {
@@ -130,11 +144,18 @@ export default {
           }
         }
       }
-
-      &:hover .course-title {
-        color: $highlightedTextColor;
+    }
+  }
+  .courses-btn {
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    button {
+      @include button;
+      &:hover {
+        background-color: $coursesSectTextColor;
       }
     }
   }
 }
+// end courses section
 </style>

@@ -11,6 +11,7 @@ import {
   faCheck,
   faFileLines,
   faUser,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -24,7 +25,8 @@ library.add(
   faBook,
   faCheck,
   faFileLines,
-  faUser
+  faUser,
+  faArrowRight
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
