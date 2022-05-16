@@ -119,6 +119,7 @@ export default {
 
 #services {
   padding-top: 10rem;
+  padding-bottom: 5rem;
   background-image: url("@/assets/images/background-pattern-grid-line.png");
   background-position: center;
   .right-row {

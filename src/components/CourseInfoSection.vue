@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "CourseSection",
+  name: "CourseInfoSection",
 };
 </script>
 

@@ -2,7 +2,7 @@
   <div id="app">
     <SiteHeader :navMenu="navMenu" />
     <SiteJumbo />
-    <SiteMain />
+    <SiteMain :coursesList="coursesList"/>
   </div>
 </template>
 
@@ -40,6 +40,50 @@ export default {
         {
           text: "Shop",
           link: "#",
+        },
+      ],
+      coursesList: [
+        {
+          price: "$40.00",
+          course_title: "Learning to Write as a Professional Author",
+          course_image: require("@/assets/images/course-02-480x298.jpg"),
+          lessons_number: "20 Lessons",
+          students_number: "50 Students",
+        },
+        {
+          price: "Free",
+          course_title: "Customer-centric Info-Tech Strategies",
+          course_image: require("@/assets/images/stock-full-hd-03-480x298.jpg"),
+          lessons_number: "24 Lessons",
+          students_number: "769 Students",
+        },
+        {
+          price: "$19.00",
+          course_title: "Open Programming Courses for Everyone: Python",
+          course_image: require("@/assets/images/stock-full-hd-04-480x298.jpg"),
+          lessons_number: "17 Lessons",
+          students_number: "62 Students",
+        },
+        {
+          price: "$26.00",
+          course_title: "Academic Listening and Note-taking",
+          course_image: require("@/assets/images/stock-full-hd-06-480x298.jpg"),
+          lessons_number: "14 Lessons",
+          students_number: "67 Students",
+        },
+        {
+          price: "$39.00",
+          course_title: "Master jQuery in a Short Period of Time",
+          course_image: require("@/assets/images/course-featured-image-01-480x298.jpg"),
+          lessons_number: "6 Lessons",
+          students_number: "51 Students",
+        },
+        {
+          price: "$59.00",
+          course_title: "Introduction to Javascript for Beginners",
+          course_image: require("@/assets/images/stock-full-hd-05-480x298.jpg"),
+          lessons_number: "14 Lessons",
+          students_number: "76 Students",
         },
       ],
     };

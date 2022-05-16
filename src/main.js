@@ -9,6 +9,8 @@ import {
   faLifeRing,
   faBook,
   faCheck,
+  faFileLines,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -20,7 +22,9 @@ library.add(
   faRuler,
   faLifeRing,
   faBook,
-  faCheck
+  faCheck,
+  faFileLines,
+  faUser
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
