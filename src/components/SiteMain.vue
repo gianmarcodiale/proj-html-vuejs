@@ -2,6 +2,7 @@
   <main id="site_main">
     <CourseInfoSection />
     <ServicesSection />
+    <!-- Courses Section -->
     <section id="courses_section">
       <div class="small-text text-uppercase text-center">
         choose a course to get started
@@ -41,7 +42,41 @@
         </button>
       </div>
     </section>
+    <!-- /Courses Section -->
     <PartnersSection />
+    <!-- Blog Section -->
+    <section id="blog">
+      <div class="small-text text-uppercase text-center">
+        enjoy reading on maxcoach
+      </div>
+      <h2 class="headline text-center">
+        Latest on <span class="highlight">Our Blogs</span>
+      </h2>
+      <div class="container">
+        <div class="row row-cols-3" id="articles">
+          <div class="col" v-for="(article, index) in articles" :key="index">
+            <img :src="article.image" alt="" class="img-fluid" />
+            <div class="article-small-text text-uppercase">
+              {{ article.type }}
+            </div>
+            <h3 class="article-title">{{ article.title }}</h3>
+            <div class="article-info d-flex">
+              <div class="article-date d-flex align-items-center">
+                <font-awesome-icon icon="fa-regular fa-calendar" />{{
+                  article.date
+                }}
+              </div>
+              <div class="article-views d-flex align-items-center">
+                <font-awesome-icon icon="fa-regular fa-eye" />{{
+                  article.views
+                }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Blog Section -->
   </main>
 </template>
 
@@ -59,6 +94,7 @@ export default {
   },
   props: {
     coursesList: Array,
+    articles: Array,
   },
 };
 </script>
@@ -158,4 +194,57 @@ export default {
   }
 }
 // end courses section
+// blog section
+#blog {
+  background-color: $blogSect_footerColor;
+  .small-text {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #696969;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+  }
+
+  h2.headline {
+    font-size: 48px;
+    line-height: 1.17em;
+    color: #333333;
+    margin-bottom: 5rem;
+
+    .highlight {
+      color: $highlightedTextColor;
+      font-weight: 300;
+    }
+  }
+  #articles {
+    img {
+      border-radius: 0.3rem;
+    }
+    .article-small-text {
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: #696969;
+    }
+    .article-title {
+      font-size: 24px;
+      cursor: pointer;
+      &:hover {
+        color: $highlightedTextColor;
+      }
+    }
+    .article-info {
+      margin-top: 1.5rem;
+      column-gap: 2rem;
+      font-size: 14px;
+      .article-date,
+      .article-views {
+        color: #696969;
+        column-gap: 0.5rem;
+      }
+    }
+  }
+}
+// end blog section
 </style>

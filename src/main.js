@@ -13,7 +13,11 @@ import {
   faUser,
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
+import {
+  faCircleUser,
+  faCalendar,
+  faEye,
+} from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faChevronDown,
@@ -26,7 +30,9 @@ library.add(
   faCheck,
   faFileLines,
   faUser,
-  faArrowRight
+  faArrowRight,
+  faCalendar,
+  faEye
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
