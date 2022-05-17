@@ -77,6 +77,8 @@
       </div>
     </section>
     <!-- /Blog Section -->
+    <LearnSection />
+    <StartToday />
   </main>
 </template>
 
@@ -84,6 +86,8 @@
 import CourseInfoSection from "@/components/CourseInfoSection.vue";
 import ServicesSection from "@/components/ServicesSection.vue";
 import PartnersSection from "@/components/PartnersSection.vue";
+import LearnSection from "@/components/LearnSection.vue";
+import StartToday from "@/components/StartToday.vue";
 
 export default {
   name: "SiteMain",
@@ -91,6 +95,8 @@ export default {
     CourseInfoSection,
     ServicesSection,
     PartnersSection,
+    LearnSection,
+    StartToday,
   },
   props: {
     coursesList: Array,
@@ -238,6 +244,7 @@ export default {
       margin-top: 1.5rem;
       column-gap: 2rem;
       font-size: 14px;
+      margin-bottom: 5rem;
       .article-date,
       .article-views {
         color: #696969;

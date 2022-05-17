@@ -12,11 +12,14 @@ import {
   faFileLines,
   faUser,
   faArrowRight,
+  faGear,
+  faDisplay,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faCircleUser,
   faCalendar,
   faEye,
+  faFlag,
 } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
@@ -32,7 +35,10 @@ library.add(
   faUser,
   faArrowRight,
   faCalendar,
-  faEye
+  faEye,
+  faFlag,
+  faGear,
+  faDisplay
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
