@@ -2,7 +2,8 @@
   <div id="app">
     <SiteHeader :navMenu="navMenu" />
     <SiteJumbo />
-    <SiteMain :coursesList="coursesList" :articles="articles"/>
+    <SiteMain :coursesList="coursesList" :articles="articles" />
+    <SiteFooter :footerMenu="footerMenu" />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import SiteHeader from "@/components/SiteHeader.vue";
 import SiteJumbo from "@/components/SiteJumbo.vue";
 import SiteMain from "@/components/SiteMain.vue";
+import SiteFooter from "@/components/SiteFooter.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     SiteHeader,
     SiteJumbo,
     SiteMain,
+    SiteFooter,
   },
   data() {
     return {
@@ -92,23 +95,50 @@ export default {
           type: "artist",
           title: "Brush Strokes Energize Trees in Paintings",
           date: "May 15, 2020",
-          views: "688 views"
+          views: "688 views",
         },
         {
           image: require("@/assets/images/artist-blog-01-480x325.jpg"),
           type: "artist",
           title: "Pocket-Sized Notebooks Hold Miniature Paintings",
           date: "May 15, 2020",
-          views: "603 views"
+          views: "603 views",
         },
         {
           image: require("@/assets/images/artist-blog-02-480x325.jpg"),
           type: "artist",
           title: "Connection Between Self-Portraits and Identity",
           date: "May 15, 2020",
-          views: "397 views"
+          views: "397 views",
+        },
+      ],
+      footerMenu: [
+        {
+          title: "Explore",
+          items: [
+            {item: "Start here"},
+            {item: "Blog"},
+            {item: "About us"}
+          ]
+        },
+        {
+          title: "",
+          items: [
+            {item: "Success story"},
+            {item: "Courses"},
+            {item: "Contact us"}
+          ]
+        },
+        {
+          title: "Information",
+          items: [
+            {item: "Membership"},
+            {item: "Purchase guide"},
+            {item: "Privacy policy"},
+            {item: "Terms of services"}
+          ]
         }
-      ]
+      ],
     };
   },
 };

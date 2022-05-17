@@ -21,6 +21,12 @@ import {
   faEye,
   faFlag,
 } from "@fortawesome/free-regular-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faChevronDown,
@@ -38,7 +44,11 @@ library.add(
   faEye,
   faFlag,
   faGear,
-  faDisplay
+  faDisplay,
+  faFacebookSquare,
+  faTwitter,
+  faInstagram,
+  faLinkedin
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
