@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="col" id="right_footer">
-          <div class="row row-cols-3">
+          <div class="row row-cols-2">
             <div class="col" v-for="(title, index) in footerMenu" :key="index">
               <h2 class="heading">{{ title.title }}</h2>
               <div
@@ -74,6 +74,7 @@ export default {
     }
   }
   #right_footer {
+    padding-left: 15rem;
     h2.heading {
       font-size: 18px;
       color: #333333;
@@ -82,6 +83,7 @@ export default {
       text-decoration: none;
       color: #696969;
       font-size: 14px;
+      line-height: 2.5;
     }
   }
   .copy {

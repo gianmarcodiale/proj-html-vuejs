@@ -118,12 +118,7 @@ export default {
           items: [
             {item: "Start here"},
             {item: "Blog"},
-            {item: "About us"}
-          ]
-        },
-        {
-          title: "",
-          items: [
+            {item: "About us"},
             {item: "Success story"},
             {item: "Courses"},
             {item: "Contact us"}
