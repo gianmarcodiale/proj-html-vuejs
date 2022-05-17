@@ -66,6 +66,10 @@ export default {
 
       svg {
         cursor: pointer;
+        color: #333333;
+        &:hover {
+          color: $highlightedTextColor;
+        }
       }
     }
   }

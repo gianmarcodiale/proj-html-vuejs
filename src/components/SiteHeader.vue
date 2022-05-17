@@ -26,11 +26,9 @@
         <div class="commands d-flex align-items-center">
           <font-awesome-icon
             icon="fa-solid fa-cart-shopping"
-            style="color: white"
           />
           <font-awesome-icon
             icon="fa-regular fa-circle-user"
-            style="color: white"
           />
           <input type="search" placeholder="Search" />
           <font-awesome-icon
@@ -47,7 +45,7 @@
 export default {
   name: "SiteHeader",
   props: {
-      navMenu: Array,
+    navMenu: Array,
   },
 };
 </script>
@@ -68,6 +66,13 @@ export default {
 
       .commands {
         column-gap: 1rem;
+        svg {
+          cursor: pointer;
+          color: white;
+          &:hover {
+            color: $btnsColor;
+          }
+        }
 
         input {
           padding: 0.5rem;
@@ -88,6 +93,9 @@ export default {
         a {
           text-decoration: none;
           color: $mainWhiteColor;
+          &:hover {
+            text-decoration: underline 3px $highlightedTextColor;
+          }
         }
       }
     }
